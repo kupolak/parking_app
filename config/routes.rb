@@ -2,8 +2,13 @@
 
 Rails.application.routes.draw do
   resources :spots
+  resources :bookings
   get 'history', to: 'bookings#index'
+  get 'reservation', to: 'bookings#new'
+  post 'destroy_reservation', to: 'bookings#destroy'
+  get 'user_bookings', to: 'bookings#user_bookings'
   get 'spots', to: "spots#index"
+  get 'spots/:id', to: "spots#show"
   root 'home#index'
   get '/auth/slack/callback', to: 'sessions#create'
 end

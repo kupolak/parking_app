@@ -8,6 +8,7 @@ class SpotsController < ApplicationController
 
   # GET /spots/1 or /spots/1.json
   def show
+    @spot = Spot.find(params[:id])
   end
 
   # GET /spots/new
@@ -67,5 +68,7 @@ class SpotsController < ApplicationController
     def spot_params
       params.fetch(:spot, {})
     end
+
+
 end
 

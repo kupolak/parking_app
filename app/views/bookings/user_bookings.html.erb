@@ -1,0 +1,24 @@
+<!--<h1>My bookings</h1>-->
+<%# @user_bookings.each do |b| %>
+<!--  <p><%#= b %></p>-->
+<%# end %>
+
+<div class="container">
+  <% @user_bookings.reverse.each do |booking| %>
+    <div class="card mt-5 border-5 pt-2 active pb-0 px-3">
+      <div class="card-body ">
+        <div class="row">
+          <div class="col-12 ">
+            <h4 class="card-title "><b>Booking number: <%= booking.id %></b></h4>
+          </div>
+          <div class="col">
+            <h6 class="card-subtitle mb-2 text-muted">
+              <p>Parking slot number: <%= booking.spot.id %> Booked by: <%= booking.user.full_name %>. Picked up <%= time_ago_in_words(booking.pickup_time) %> ago. To be returned in <%= time_ago_in_words(booking.return_time) %>. </p>
+              <td><%= link_to 'Release parking spot', booking, method: :delete %></td>
+            </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

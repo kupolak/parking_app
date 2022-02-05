@@ -5,9 +5,11 @@
     <div class="col-lg-2 available">
       <div class="box">
         <h5><%= spot.name %></h5>
-        <button type="button" class="btn btn-success">Available!</button>
+        <%= link_to "Available!", spot_path(spot), class: "btn btn-success", type: "button" %>
       </div>
     </div>
+      <%# elsif %>
+
       <% else %>
     <div class="col-lg-2 reserved">
     <div class="box"><h5><%= spot.name %></h5>
