@@ -19,6 +19,8 @@ gem "tzinfo-data", platforms: %i[mingw mswin x64_mingw jruby]
 gem 'omniauth'
 gem 'omniauth-slack'
 gem 'bootstrap', '~> 5.1.3'
+gem "autoprefixer-rails"
+
 
 
 gem "bootsnap", require: false
