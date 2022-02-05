@@ -16,7 +16,9 @@ gem "sprockets-rails"
 gem "stimulus-rails"
 gem "turbo-rails"
 gem "tzinfo-data", platforms: %i[mingw mswin x64_mingw jruby]
+gem 'omniauth'
 gem 'omniauth-slack'
+gem 'bootstrap', '~> 5.1.3'
 
 
 gem "bootsnap", require: false
