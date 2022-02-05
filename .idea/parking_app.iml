@@ -50,12 +50,25 @@
     <orderEntry type="library" scope="PROVIDED" name="diff-lcs (v1.5.0, Remote: ruby-3.1.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="digest (v3.1.0, Remote: ruby-3.1.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="erubi (v1.10.0, Remote: ruby-3.1.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="faraday (v1.9.3, Remote: ruby-3.1.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="faraday-em_http (v1.0.0, Remote: ruby-3.1.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="faraday-em_synchrony (v1.0.0, Remote: ruby-3.1.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="faraday-excon (v1.1.0, Remote: ruby-3.1.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="faraday-httpclient (v1.0.1, Remote: ruby-3.1.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="faraday-multipart (v1.0.3, Remote: ruby-3.1.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="faraday-net_http (v1.0.1, Remote: ruby-3.1.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="faraday-net_http_persistent (v1.2.0, Remote: ruby-3.1.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="faraday-patron (v1.0.0, Remote: ruby-3.1.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="faraday-rack (v1.0.0, Remote: ruby-3.1.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="faraday-retry (v1.0.3, Remote: ruby-3.1.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="globalid (v1.0.0, Remote: ruby-3.1.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="hashie (v5.0.0, Remote: ruby-3.1.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n (v1.9.1, Remote: ruby-3.1.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="importmap-rails (v1.0.2, Remote: ruby-3.1.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="io-console (v0.5.11, Remote: ruby-3.1.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="irb (v1.4.1, Remote: ruby-3.1.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jbuilder (v2.11.5, Remote: ruby-3.1.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="jwt (v2.3.0, Remote: ruby-3.1.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="loofah (v2.13.0, Remote: ruby-3.1.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mail (v2.7.1, Remote: ruby-3.1.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="marcel (v1.0.2, Remote: ruby-3.1.0-p0) [gem]" level="application" />
@@ -63,11 +76,18 @@
     <orderEntry type="library" scope="PROVIDED" name="mini_mime (v1.1.2, Remote: ruby-3.1.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="minitest (v5.15.0, Remote: ruby-3.1.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="msgpack (v1.4.4, Remote: ruby-3.1.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.15.0, Remote: ruby-3.1.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="multi_xml (v0.6.0, Remote: ruby-3.1.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="multipart-post (v2.1.1, Remote: ruby-3.1.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="net-imap (v0.2.3, Remote: ruby-3.1.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="net-pop (v0.1.1, Remote: ruby-3.1.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="net-smtp (v0.3.1, Remote: ruby-3.1.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nio4r (v2.5.8, Remote: ruby-3.1.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.13.1, Remote: ruby-3.1.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="oauth2 (v1.4.7, Remote: ruby-3.1.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="omniauth (v1.9.1, Remote: ruby-3.1.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="omniauth-oauth2 (v1.3.1, Remote: ruby-3.1.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="omniauth-slack (v2.3.0, Remote: ruby-3.1.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="parallel (v1.21.0, Remote: ruby-3.1.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="parser (v3.1.0.0, Remote: ruby-3.1.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="pg (v1.3.1, Remote: ruby-3.1.0-p0) [gem]" level="application" />
