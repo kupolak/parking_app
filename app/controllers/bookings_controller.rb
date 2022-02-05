@@ -1,13 +1,13 @@
 class BookingsController < ApplicationController
   def index
-    @spots = Booking.all
+    @bookings = Booking.all
     respond_to do |format|
       format.html
     end
   end
 
   def show
-    @spot = Booking.find(params[:id])
+    @booking = Booking.find(params[:id])
     respond_to do |format|
       format.html
     end

@@ -1,71 +1,3 @@
-//$blue: #DDEDFF;
-//$dark-blue: #0087FF;
-//
-//$red: #ff0000;
-//$dark-red: #9b0000;
-//
-//@mixin color-panel($color1, $color2){
-//  border: 1px solid $color2;
-//  background-color: $color1;
-//  color: $color2;
-//}
-//
-//.panel {
-//  border-radius: 1.3rem;
-//  padding: 1rem;
-//  margin-bottom: 1rem;
-//  height: 80px;
-//
-//  &.panel-blue {
-//    @include color-panel($blue, $dark-blue);
-//  }
-//  &.panel-red{
-//    @include color-panel($red, $dark-red);
-//  }
-//
-//}
-//
-//
-//
-//
-//
-//
-//
-////.our-services {
-////  background-color: #00BCD4;
-////  padding: 70px 0px;
-////}
-//.service-box {
-//  background-color: #fff;
-//  padding: 15px 20px;
-//  border-radius: 8px;
-//  margin: 15px 0px 15px;
-//  transition: 0.5s;
-//  border: 1px solid transparent;
-//}
-//.service-box:hover {
-//  background-color: #f9f9f9;
-//  border-radius: 40px;
-//  border: 1px solid #ddd;
-//}
-//.service-box:hover h3 a{
-//  color: #00bcd4;
-//}
-//.service-box i {
-//  font-size: 60px;
-//  align-items: center;
-//  display: flex;
-//  position: absolute;
-//  height: 100%;
-//  width: 100%;
-//  color: #989898;
-//}
-//.service-box h3 a {
-//  text-decoration: none;
-//  color: #FF9800;
-//  font-size: 24px;
-//}
-
 body{
   background:#a5b5c5;
   background:lightblue !important;
@@ -75,8 +7,10 @@ body{
   background: #fff;
   border-radius: 4px;
   padding-bottom: 100%;
+  padding: 35px;
 }
 
 .col-lg-2 {
   margin-top: 30px !important;
+  text-align: center;
 }
