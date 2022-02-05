@@ -1,0 +1,50 @@
+<%# @spots.each do |spot| %>
+
+<!--<div class="container">-->
+  <%# if spot.status == "available" %>
+<!--  <div class="row">-->
+<!--      <div class="col">-->
+<!--        <div class="panel panel-blue"><%#= spot.name %></div>-->
+<!--      <div/>-->
+    <%# else %>
+<!--    <div class="row">-->
+<!--      <div class="col">-->
+<!--        <div class="panel panel-red">The spot is <%#= spot.status %>.</div>-->
+<!--      </div>-->
+<!--    </div>-->
+    <%# end %>
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+
+<%# end %>
+
+<%# @spots.each do |spot| %>
+<!--  <div class="row">-->
+    <%# if spot.status == "available" %>
+<!--    <div class="col">-->
+<!--      <div class="panel panel-blue">Spot number: <%#= spot.name %></div>-->
+<!--    </div>-->
+    <%# else %>
+<!--    <div class="col">-->
+<!--      <div class="panel panel-red">This is the fourth column.</div>-->
+<!--    </div>-->
+<!--  </div>-->
+  <%# end %>
+<%# end %>
+
+<div class="container">
+  <div class="row">
+    <% @spots.each do |spot| %>
+      <% if spot.status == "available" %>
+    <div class="col-lg-2 available">
+      <div class="box"><%= spot.status %> <%= link_to spots_path(@spot) %></div>
+    </div>
+      <% else %>
+    <div class="col-lg-2 reserved">
+    <div class="box"><%= spot.name %></div>
+    </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>

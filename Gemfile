@@ -20,7 +20,8 @@ gem 'omniauth'
 gem 'omniauth-slack'
 gem 'bootstrap', '~> 5.1.3'
 gem "autoprefixer-rails"
-
+gem "faker"
+gem "font-awesome-rails"
 
 
 gem "bootsnap", require: false
