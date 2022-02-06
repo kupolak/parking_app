@@ -13,16 +13,7 @@ class BookingsController < ApplicationController
     end
   end
 
-  # DELETE /posts/1 or /posts/1.json
-  def destroy
-    @booking.destroy
-
-    respond_to do |format|
-      format.html { redirect_to bookings_url, notice: "Post was successfully destroyed." }
-    end
-  end
-
   def user_bookings
-    @user_bookings = Booking.where(user: User.where(id: 3))
+    @user_bookings = Booking.where(user: current_user)
   end
 end

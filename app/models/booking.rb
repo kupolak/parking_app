@@ -2,9 +2,11 @@ class Booking < ApplicationRecord
   belongs_to :spot
   belongs_to :user
 
-  after_create :set_expiration_time
+  after_create :take_parking_space
 
-  def set_expiration_time
-    Time.now + 1.day
+  private
+
+  def take_parking_space
+
   end
 end

@@ -13,8 +13,8 @@
           </div>
           <div class="col">
             <h6 class="card-subtitle mb-2 text-muted">
-              <p>Parking slot number: <%= booking.spot.id %> Booked by: <%= booking.user.full_name %>. Picked up <%= time_ago_in_words(booking.pickup_time) %> ago. To be returned in <%= time_ago_in_words(booking.return_time) %>. </p>
-              <td><%= link_to 'Release parking spot', booking, method: :delete %></td>
+              <p>Parking slot number: <%= booking.spot.id %>. Picked up <%= time_ago_in_words(booking.pickup_time) %> ago. To be returned in <%= time_ago_in_words(booking.return_time) %>. </p>
+              <td><%= link_to 'Release parking spot', booking_url(booking), method: :delete %></td>
             </h6>
           </div>
         </div>
