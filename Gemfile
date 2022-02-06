@@ -23,6 +23,8 @@ gem "autoprefixer-rails"
 gem "faker"
 gem "font-awesome-rails"
 gem 'httparty'
+gem 'slackathon', git: 'https://github.com/sanjays254/slackathon'
+
 
 
 gem "bootsnap", require: false

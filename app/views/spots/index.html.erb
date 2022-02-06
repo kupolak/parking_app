@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row">
-    <% @spots.each do |spot| %>
+    <% @spots.sort.each do |spot| %>
       <% if spot.status == "available" %>
     <div class="col-lg-2 available">
       <div class="box">

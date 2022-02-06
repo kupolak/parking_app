@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/sanjays254/slackathon
+  revision: 091db5777a39fa478de1c47b83d00781a2cc0eb3
+  specs:
+    slackathon (0.1.0)
+      rails (>= 5.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -327,6 +334,7 @@ DEPENDENCIES
   rubocop
   rubocop-performance
   shoulda-matchers (~> 5.0)
+  slackathon!
   sprockets-rails
   stimulus-rails
   turbo-rails
