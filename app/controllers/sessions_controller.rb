@@ -4,6 +4,9 @@ class SessionsController < ApplicationController
     #
     # session[:user_id] = @user.id
     # redirect_to '/'
+    render plain: { access_token: request.env['omniauth.strategy'].access_token.to_hash,
+                    auth_hash:  request.env['omniauth.auth']
+    }.to_yaml
   end
 
   protected

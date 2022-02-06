@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   get 'spots', to: "spots#index"
   get 'spots/:id', to: "spots#show"
   root 'home#index'
-  # get '/auth/slack/callback', to: 'sessions#create'
+  get '/auth/slack/callback', to: 'sessions#create'
   get "/slack_sign_in/callback", to: 'sessions#create'
   mount Slackathon::Engine => "/slack"
 
