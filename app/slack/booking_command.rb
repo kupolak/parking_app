@@ -1,4 +1,4 @@
-class SpotCommand < Slackathon::Command
+class BookingCommand < Slackathon::Command
   def call
     # Check available spots
     spots = Spot.where(status: "available")

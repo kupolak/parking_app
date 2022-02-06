@@ -10,7 +10,8 @@ class ReleaseCommand < Slackathon::Command
       }
     else
       available_booking = bookings.sample
-      # make a new booking
+      # release a spot
+      bookings
       {
         response_type: "in_channel",
         text: "Booked parking spot with number #{booking.spot_id}. Parking spots left: #{spots.count}"
