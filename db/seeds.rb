@@ -21,7 +21,7 @@ end
 end
 
 15.times do |n|
-  b = Booking.new(pickup_time: Date.now, return_time: Time.now + 1.day, spot_id: n+1, user_id: rand(1..5))
+  b = Booking.new(spot_id: n+1, user_id: rand(1..5))
   b.save!
   p "Seeding with: pickup_time: #{b.pickup_time}, return_time: #{b.return_time}, spot_id: #{b.spot_id}, user_id: #{b.user_id}"
 end

@@ -13,5 +13,6 @@ Rails.application.routes.draw do
   get '/auth/slack/callback', to: 'sessions#create'
   get "/slack_sign_in/callback", to: 'sessions#create'
   mount Slackathon::Engine => "/slack"
+  # get '*path', to: 'spots#index'
 
 end

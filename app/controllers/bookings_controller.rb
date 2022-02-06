@@ -6,6 +6,10 @@ class BookingsController < ApplicationController
     end
   end
 
+  def create
+
+  end
+
   def show
     @booking = Booking.find(params[:id])
     respond_to do |format|
