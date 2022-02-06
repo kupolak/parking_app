@@ -25,7 +25,6 @@ gem "font-awesome-rails"
 gem 'httparty'
 gem 'slackathon', git: 'https://github.com/sanjays254/slackathon'
 gem 'factory_bot'
-gem 'whenever', require: false
 
 
 
