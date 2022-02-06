@@ -14,7 +14,7 @@ class BookingByIdCommand < Slackathon::Command
         pickup_time: Time.now,
         return_time: Time.now + 1.day,
         spot_id: available_spot.id,
-        user_id: params[:user_id],
+        user_id: params[:user_id]
         # user_id: 3
       )
       available_spot.status = "Reserved"

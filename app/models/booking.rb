@@ -5,7 +5,9 @@ class Booking < ApplicationRecord
   after_create :set_pickup_time, :change_spot_status
 
   def set_pickup_time
-    self.pickup_time = Time.now
+    pickup = pickup_time
+    pickup.pickup_time = Time.now
+    pickup.save!
   end
 
   def change_spot_status

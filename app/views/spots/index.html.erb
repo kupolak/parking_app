@@ -5,7 +5,7 @@
     <div class="col-lg-2 available">
       <div class="box">
         <h5><%= spot.name %></h5>
-        <%= link_to "Available!", reservation_path(spot), class: "btn btn-success", type: "button" %>
+        <%= link_to "Available!", reservation_path(@spot), method: "post", class: "btn btn-success", type: "button" %>
       </div>
     </div>
       <%# elsif %>

@@ -1,8 +1,8 @@
-require 'rails_helper'
+require "rails_helper"
 
 RSpec.describe "spots/edit", type: :view do
   before(:each) do
-    @spot = assign(:spot, Spot.create!())
+    @spot = assign(:spot, Spot.create!)
   end
 
   it "renders the edit spot form" do

@@ -7,7 +7,7 @@ class SpotStatusCommand < Slackathon::Command
         text: "The parking spot with id #{params[:text]} doesn't exist."
       }
     else
-      status = spot['status'].to_s
+      status = spot["status"].to_s
       {
         response_type: "in_channel",
         text: "The parking spot with id #{params[:text]} is #{status}"

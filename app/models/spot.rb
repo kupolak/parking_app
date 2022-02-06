@@ -6,6 +6,6 @@ class Spot < ApplicationRecord
 
   def set_status
     self.status = "Available"
-    self.save!
+    save!
   end
 end
