@@ -14,7 +14,7 @@
           <div class="col">
             <h6 class="card-subtitle mb-2 text-muted">
               <p>Parking slot number: <%= booking.spot.id %>. Picked up <%= time_ago_in_words(booking.pickup_time) %> ago. To be returned in <%= time_ago_in_words(booking.return_time) %>. </p>
-              <td><%= link_to 'Release parking spot', bookings_path(booking), method: :delete %></td>
+              <td><%= link_to 'Release parking spot', booking, method: :delete, data: { confirm: 'Are you sure?' } %></td>
             </h6>
           </div>
         </div>

@@ -2,7 +2,7 @@ class BookingByIdCommand < Slackathon::Command
   def call
     # Check if spot is available
     spot = Spot.where(id: params[:text])
-    if spot.status == "reserved"
+    if spot.status == "Reserved"
       {
         response_type: "in_channel",
         text: "The spot with number #{spot.id} is not available at the moment. Try to book a different spot."
@@ -14,10 +14,10 @@ class BookingByIdCommand < Slackathon::Command
         pickup_time: Time.now,
         return_time: Time.now + 1.day,
         spot_id: available_spot.id,
-        # user_id: params[:user_id].to_i,
-        user_id: 3
+        user_id: params[:user_id],
+        # user_id: 3
       )
-      available_spot.status = "reserved"
+      available_spot.status = "Reserved"
       available_spot.save!
       booking.save!
       {

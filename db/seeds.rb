@@ -15,7 +15,7 @@
 end
 
 20.times do |n|
-  s = Spot.new(name: "Spot number #{n+1}", status: "available")
+  s = Spot.new(name: "Spot number #{n+1}")
   s.save!
   p "Seeding with: name: #{s.name}, status: #{s.status}"
 end

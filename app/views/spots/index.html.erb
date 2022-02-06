@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
     <% @spots.sort.each do |spot| %>
-      <% if spot.status == "available" %>
+      <% if spot.status == "Available" %>
     <div class="col-lg-2 available">
       <div class="box">
         <h5><%= spot.name %></h5>
