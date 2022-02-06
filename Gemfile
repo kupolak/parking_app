@@ -17,11 +17,13 @@ gem "stimulus-rails"
 gem "turbo-rails"
 gem "tzinfo-data", platforms: %i[mingw mswin x64_mingw jruby]
 gem 'omniauth'
-gem 'omniauth-slack'
+gem 'ginjo-omniauth-slack', require:'omniauth-slack'
+gem 'slack-ruby-client'
 gem 'bootstrap', '~> 5.1.3'
 gem "autoprefixer-rails"
 gem "faker"
 gem "font-awesome-rails"
+gem 'httparty'
 
 
 gem "bootsnap", require: false
