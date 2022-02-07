@@ -1,6 +1,10 @@
 class BookingsController < ApplicationController
   def index
-    @bookings = Booking.all
+    if current_user
+      @bookings = Booking.all
+    else
+      redirect_to "/"
+    end
   end
 
   def new
@@ -30,7 +34,11 @@ class BookingsController < ApplicationController
   end
 
   def user_bookings
-    @user_bookings = Booking.where(user: current_user)
+    if current_user
+      @user_bookings = Booking.where(user: current_user)
+    else
+      redirect_to "/"
+    end
   end
 
   def booking_params
