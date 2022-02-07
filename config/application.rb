@@ -20,6 +20,12 @@ require "action_cable/engine"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+Dotenv::Railtie.load
+
+SLACK_CLIENT_ID = ENV['SLACK_CLIENT_ID']
+SLACK_CLIENT_SECRET = ENV['SLACK_CLIENT_SECRET']
+
+
 module ParkingApp
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
