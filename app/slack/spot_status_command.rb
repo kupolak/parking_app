@@ -1,18 +1,15 @@
 class SpotStatusCommand < Slackathon::Command
   def call
-    spot = Spot.where(id: params[:text].to_s)
-    if spot.empty?
+    spot = Spot.where(id: params[:text].to_i).first
+    if spot.nil?
       {
         response_type: "in_channel",
         text: "The parking spot with id #{params[:text]} doesn't exist."
       }
     else
-      p spot.status
-      # status = spot["status"].to_s
-      # p status
       {
         response_type: "in_channel",
-        text: "The parking spot with id #{params[:text].to_s} is #{spot[:status]}"
+        text: "The parking spot with id #{params[:text]} is #{spot[:status]}"
       }
     end
   end

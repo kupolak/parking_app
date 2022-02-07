@@ -10,10 +10,10 @@ class BookingCommand < Slackathon::Command
     else
       available_spot = spots.sample
       # make a new booking
+      user_id = params[:user_id]
       booking = Booking.new(
         spot_id: available_spot.id,
-        # user_id: params[:user_id].to_i,
-        user_id: 3
+        user_id: User.where(member_id: user_id).ids.join.to_i
       )
       available_spot.status = "Reserved"
       available_spot.save!
