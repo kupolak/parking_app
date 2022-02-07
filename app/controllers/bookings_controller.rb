@@ -21,13 +21,8 @@ class BookingsController < ApplicationController
 
   def show
     @booking = Booking.find_or_create_by(spot_id: params[:id], user_id: current_user.id)
-    if @booking
-      @booking.save!
-      flash[:notice] = "Booked spot number #{@booking.spot.id}!"
-      redirect_to "/spots"
-    else
-      flash[:notice] = "Error!"
-    end
+    @booking.save!
+    redirect_to "/spots"
     respond_to do |format|
       format.html
     end
