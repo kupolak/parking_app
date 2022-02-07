@@ -10,7 +10,6 @@ class ReleaseByIdCommand < Slackathon::Command
     else
       # update existing booking
       user_id = params[:user_id]
-      # booking = Booking.where
       Booking.update!(
         spot_id: spot.id,
         user_id: User.where(member_id: user_id).ids.join.to_i
