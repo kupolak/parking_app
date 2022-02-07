@@ -1,9 +1,6 @@
 class BookingsController < ApplicationController
   def index
     @bookings = Booking.all
-    # respond_to do |format|
-    #   format.html
-    # end
   end
 
   def new
@@ -19,7 +16,14 @@ class BookingsController < ApplicationController
   end
 
   def show
-    @booking = Booking.find(params[:id])
+    @booking = Booking.find_or_create_by(spot_id: params[:id], user_id: current_user.id)
+    if @booking
+      @booking.save!
+      flash[:alert] = "Booked!"
+      redirect_to "/spots"
+    else
+      flash[:alert] = "Error!"
+    end
     respond_to do |format|
       format.html
     end

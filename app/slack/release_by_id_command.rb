@@ -11,11 +11,9 @@ class ReleaseByIdCommand < Slackathon::Command
       available_spot = spot
       # make a new booking
       booking = Booking.new(
-        pickup_time: Time.now,
-        return_time: Time.now + 1.day,
         spot_id: available_spot.id,
-        # user_id: params[:user_id].to_i,
-        user_id: 3
+        user_id: params[:user_id].to_i,
+        # user_id: 3
       )
       available_spot.status = "Reserved"
       available_spot.save!
