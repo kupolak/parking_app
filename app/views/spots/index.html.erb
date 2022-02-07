@@ -1,4 +1,5 @@
 <div class="container">
+  <h1 style="text-align: center"><%= flash.now[:notice] %></h1>
   <div class="row">
     <% @spots.sort.each do |spot| %>
       <% if spot.status == "Available" %>
@@ -8,12 +9,9 @@
         <%= link_to "Available!", booking_path(spot), action: :create, class: "btn btn-success", type: "button" %>
       </div>
     </div>
-      <%# elsif %>
-
       <% else %>
     <div class="col-lg-2 reserved">
     <div class="box"><h5><%= spot.name %></h5>
-
       <button type="button" class="btn btn-danger">Not available</button>
     </div>
     </div>

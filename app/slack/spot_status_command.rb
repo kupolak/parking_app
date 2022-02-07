@@ -1,6 +1,5 @@
 class SpotStatusCommand < Slackathon::Command
   def call
-    p "dupa"
     spot = Spot.where(id: params[:text].to_s)
     if spot.empty?
       {

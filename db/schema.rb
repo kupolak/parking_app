@@ -11,12 +11,13 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema.define(version: 2022_02_05_131354) do
+
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "bookings", force: :cascade do |t|
-    t.datetime "pickup_time", precision: 6, default: "2022-02-06 20:41:27"
-    t.datetime "return_time", precision: 6, default: "2022-02-07 20:41:27"
+    t.datetime "pickup_time", precision: 6
+    t.datetime "return_time", precision: 6
     t.bigint "spot_id", null: false
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false

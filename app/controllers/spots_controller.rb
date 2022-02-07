@@ -1,26 +1,22 @@
 class SpotsController < ApplicationController
   before_action :set_spot, only: %i[show edit update destroy]
 
-  # GET /spots or /spots.json
   def index
+    ReleaseParkingSpotJob.perform_now
     @spots = Spot.all
   end
 
-  # GET /spots/1 or /spots/1.json
   def show
     @spot = Spot.find(params[:id])
   end
 
-  # GET /spots/new
   def new
     @spot = Spot.new
   end
 
-  # GET /spots/1/edit
   def edit
   end
 
-  # POST /spots or /spots.json
   def create
     @spot = Spot.new(spot_params)
 

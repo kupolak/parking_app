@@ -24,7 +24,7 @@ gem "faker"
 gem "font-awesome-rails"
 gem "httparty"
 gem "slackathon", git: "https://github.com/sanjays254/slackathon"
-gem "factory_bot"
+gem "factory_bot_rails"
 
 gem "bootsnap", require: false
 group :development, :test do
