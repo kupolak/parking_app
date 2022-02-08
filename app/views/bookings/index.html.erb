@@ -1,0 +1,18 @@
+<div class="container">
+  <% @bookings.sort.reverse.each do |booking| %>
+  <div class="card mt-5 border-5 pt-2 active pb-0 px-3">
+    <div class="card-body ">
+      <div class="row">
+        <div class="col-12 ">
+          <h4 class="card-title "><b>Booking number: <%= booking.id %></b></h4>
+        </div>
+        <div class="col">
+          <h6 class="card-subtitle mb-2 text-muted">
+            <p>Parking slot number: <%= booking.spot.id %>. Status: <%= booking.spot.status %>. </p>
+          </h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  <% end %>
+</div>

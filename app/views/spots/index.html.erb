@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <% @spots.sort.each do |spot| %>
+      <% if spot.status == "Available" %>
+      <div class="col-lg-2 available">
+        <div class="box">
+          <h5><%= spot.name %></h5>
+          <%= link_to "Available!", booking_path(spot), action: :create, class: "btn btn-success", type: "button" %>
+        </div>
+      </div>
+      <% else %>
+        <div class="col-lg-2 reserved">
+          <div class="box"><h5><%= spot.name %></h5>
+            <button type="button" class="btn btn-danger">Not available</button>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>
